@@ -1,0 +1,39 @@
+{
+  "name": "node-football-data-org",
+  "version": "0.0.1",
+  "main": "dist/server.js",
+  "repository": "git@github.com:ruiposse/node-football-data-org.git",
+  "author": "Rui Posse <ruiposse@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "del": "rimraf ./dist",
+    "start": "node dist/server",
+    "build": "yarn del && webpack -p",
+    "dev": "yarn del && webpack -w"
+  },
+  "dependencies": {
+    "micro": "9.0.0",
+    "microrouter": "^2.2.2",
+    "morgan": "^1.8.2",
+    "node-fetch": "^1.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon-webpack-plugin": "^0.1.4",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.5.5",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
