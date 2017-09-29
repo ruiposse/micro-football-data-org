@@ -33,7 +33,7 @@ export default {
     ]
   },
   plugins: [
-    new NodemonPlugin({ ignore: ['./dist'] }),
+    new NodemonPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
   ],
